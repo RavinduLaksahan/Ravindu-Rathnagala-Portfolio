@@ -1,15 +1,9 @@
-function myMenuFunction(){
-    var menuBtn = document.getElementById("myNavMenu");
 
-    if(menuBtn.className==="nav-menu"){
-        menuBtn.className += " responsive";
-    }
-    else{
-        menuBtn.className = "nav-menu";
-    }
-}
+  
 
-window.onscroll = function(){headerShadow()};
+window.onscroll = function(){
+    headerShadow()
+};
 
 function headerShadow(){
     const navHeader = document.getElementById("header");

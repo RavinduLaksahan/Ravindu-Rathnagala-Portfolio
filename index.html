@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="shortcut icon" href="assets/images/icon.jpg">
+        <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+        
         <title>Ravindu Rathnagala</title>
 
     </head>
@@ -17,9 +18,9 @@
                     <span>.</span>
                 </div>
                 <div class="nav-menu" id="myNavMenu">
-                    <ul class="nav_menu_list">
+                    <ul class="nav_menu_list " id="sidemenu">
                        <li class="nav_list">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link  active-link">Home</a>
                         <div class="circle"></div>
                        </li> 
                        <li class="nav_list">
@@ -27,24 +28,27 @@
                         <div class="circle"></div>
                        </li> 
                        <li class="nav_list">
+                        <a href="#status" class="nav-link">Status</a>
+                        <div class="circle"></div>
+                       </li>
+                       <li class="nav_list">
                         <a href="#projects" class="nav-link">Projects</a>
                         <div class="circle"></div>
                        </li> 
                        <li class="nav_list">
                         <a href="#contact" class="nav-link">Contact</a>
                         <div class="circle"></div>
-                       </li> 
+                       </li>
+                       <i class="uil uil-times" onclick="closemenu()"></i>
                     </ul>
+                    <i class="uil uil-bars" onclick="openmenu()"></i>
 
                 </div>
                 <div class="nav-button">
-                    <button class="btn"> Download CV <i class="uil uil-file-alt"></i></button>
+                    <a href="assets/Ravindu Rathnagala CV.pdf" download>
+                    <button class="btn" > Download CV <i class="uil uil-file-alt"></i></button>
+                    </a>
                 </div>
-                <div class="nav-menu-btn">
-                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-                </div>
-
-
             </nav>
 
             <main class="wrapper">
@@ -54,19 +58,19 @@
                             <span>Ravindu Rathnagala</span>
                         </div>
                         <div class="featured-name">
-                            <p>I'm <span class="typedText">Developer</span> </p>
+                            <p>I'm <span class="typedText"> an Undergraduate</span></p>
                         </div>
-                        <div class="featured-text-info">
-                            <p>Hard Working Undergraduate student perusing a BSc in Computer Science and software engineering</p>
-                        </div>
+                        
                         <div class="featured-text-btn">
-                            <button class="btn blue-btn">Hire Me</button>
-                            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                            <a href="#contact" class="btn"> Hire me</a>
+                            <a href="assets/Ravindu Rathnagala CV.pdf" download>
+                                <button class="btn">Download CV<i class="uil uil-file-alt"></i></button>
+                            </a>
                         </div>
                         <div class="social_icons">
-                            <div class="icon"><i class="uil uil-instagram"></i></div>
-                            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                            <div class="icon"><i class="uil uil-github-alt"></i></div>
+                            <div class="icon"><a href="https://www.linkedin.com/in/ravindu-rathnagala/"><i class="uil uil-linkedin-alt"></i></a></div>
+                            <div class="icon"><a href="https://github.com/RavinduLaksahan"><i class="uil uil-github-alt"></i></a></div>
+                            <div class="icon"><a href="https://www.instagram.com/ravindu.00/"><i class="uil uil-instagram"></i></a></div>
                         </div>
                     </div>
                     <div class="featured-image">
@@ -90,12 +94,14 @@
                         <div class="col">
                             <div class="about-info">
                                 <h3>My Introduction</h3>
-                                <p>I am a Hard Working Undergraduate student perusing a BSc in Computer Science and software engineering at the Unviersity of Bedfordshire. 
+                                <p>I am a Hard Working Undergraduate student perusing a B.Sc.(Hons) in Computer Science and software engineering at the Unviersity of Bedfordshire. 
                                     With a strong work ethic, I am committed to excellence and eager to contribute leadership and teamwork skills to a work-friendly environment.
                                     My goal is to harness my education and passion to become a successful software engineer in the ever-evolving tech industry.
                                 </p>
                                 <div class="about-btn">
+                                    <a href="assets/Ravindu Rathnagala CV.pdf" download>
                                     <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                                </a>
                                 </div>
 
                             </div>
@@ -103,7 +109,7 @@
                         <div class="col">
                             <div class="skills-box">
                                 <div class="skills-header">
-                                    <h3>Frontend</h3>
+                                    <h3>Frontend Skills</h3>
                                 </div>
                                 <div class="skills-list">
                                     <span>HTML</span>
@@ -114,7 +120,7 @@
                             </div>
                             <div class="skills-box">
                                 <div class="skills-header">
-                                    <h3>Backend</h3>
+                                    <h3>Backend Skills</h3>
                                 </div>
                                 <div class="skills-list">
                                     <span>JAVA</span>
@@ -129,26 +135,146 @@
                     </div>
                 </section>
 
-                <section class="section" id="projects">
+                <section class="section" id="status">
                     <div class="top-header">
-                        <h1>Projects</h1>
+                        <h1>My Current Status</h1>
                     </div>
                     <div class="project-container">
                         <div class="project-box">
-                            <i class="uil uil-briefcase-alt"></i>
-                            <h3></h3>
+                            <i class="uil uil-sort-amount-up"></i>
+                            <h3>Academic Stage</h3>
+                            <label>Undergraduate</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-book-open"></i>
+                            <h3>Education</h3>
+                            <label>B.Sc.(Hons) Computer Science and Software Engineering</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-edit-alt"></i>
+                            <h3>Currently Exploring </h3>
+                            <label>MERN Stack</label>
                         </div>
                     </div>
                 </section>
+
+                <section class="section" id="projects">  
+                    <div class="top-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-list">
+                        <div class="project-work">
+                            <img src="assets/images/MedManage.png" >
+                            <div class="layer">
+                                <h2>MedManage HMS</h2>
+                                <p>A Robust Hospital ManagementSystem Implemented Using Java & MySQL, 
+                                    Featuring Fully Functional CRUD Operations.
+                                </p>
+                                <a href="https://github.com/RavinduLaksahan/MedManageHMS.git"><i class="uil uil-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-work">
+                            <img src="assets/images/EventsLK.jpg" >
+                            <div class="layer">
+                                <h2>EventsLK</h2>
+                                <p>A Dynamic Event Management System Developed Using React, Spring Boot, TailwindCSS & MySQL,
+                                     Demonstrating FullStack Development.
+                                </p>
+                                <a href="https://github.com/RavinduLaksahan/EventsLK.git"><i class="uil uil-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-work">
+                            <img src="assets/images/MoviesLK.png" >
+                            <div class="layer">
+                                <h2>Movie Hub</h2>
+                                <p>An Engaging Movie Web Application Utilizing HTML, JavaScript With jQuery, & Bootstrap, Integrated 
+                                    With A JSON Database.
+                                </p>
+                                <a href="https://github.com/RavinduLaksahan/MovieHub.git"><i class="uil uil-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-work">
+                            <img src="assets/images/UEats.png" >
+                            <div class="layer">
+                                <h2>Ueats Restauarant</h2>
+                                <p>An encompassing Restaurant Management System seamlessly integrating Java and MySQL with OOP concepts.
+                                </p>
+                                <a href="https://github.com/RavinduLaksahan/UEats-Restaurant-.git"><i class="uil uil-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    
+                    <a href="#" class="project-btn"><i class="uil uil-link-alt"></i> Github</a>
+                </div>
+                </section>
+
+                <section class="section" id="contact">
+                    <div class="top-header">
+                        <h1>Get in touch</h1>
+                        <span>I'm actively seeking an internship opportunity and am available for employment. 
+                            If you find my qualifications suitable, please contact me here </i></span>
+                    </div>
+                            <div class="contact-info">
+                                <h2>Find Me<i class="uil uil-arrow-down"></i></h2>
+                                <p><i class="uil uil-envelope"></i>Email: <a href="mailto:ravindu05.dev@gmail.com">ravindu05.dev@gmail.com</a></p>
+                                <p ><a href="https://www.linkedin.com/in/ravindu-rathnagala/" ><i class="uil uil-linkedin"></i>Linkedin</a></p>
+                            </div>
+                
+                </section>
             </main>
+            <footer>
+                <div class="top-footer">
+                    <p>Ravindu Rathnagala .</p>
+                </div>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                         <a href="#home">Home</a>
+                        </li> 
+                        <li class="footer_menu_list">
+                         <a href="#about">About</a>
+                        </li> 
+                        <li class="footer_menu_list">
+                         <a href="#status">Status</a>
+                        </li>
+                        <li class="footer_menu_list">
+                         <a href="#projects">Projects</a>
+                        </li> 
+                        <li class="footer_menu_list">
+                         <a href="#contact">Contact</a>
+                        </li> 
+                     </ul>
+                </div>
+                <div class="footer-social-icons">
+                    
+                    <div class="icon"><a href="https://www.linkedin.com/in/ravindu-rathnagala/"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <div class="icon"><a href="https://github.com/RavinduLaksahan"><i class="uil uil-github-alt"></i></a></div> 
+                    <div class="icon"><a href="https://www.instagram.com/ravindu.00/"><i class="uil uil-instagram"></i></a></div>
+                </div>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; 2024 <a href="#home" style="text-decoration: none;">Ravindu Rathnagala</a> - All Right Reserved</p>
+                </div>
+            </footer>
 
         </div>
 
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <script src="assets/js/main.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+              var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+    sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+        </script>
 
     </body>
 </html>
