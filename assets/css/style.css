@@ -344,19 +344,25 @@ h3{
     background: var(--first-color-hover);
 }
 .skills-box{
-    margin: 10px;
     display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;  
+    height: 100%;  
+    text-align: center; 
 
 }
 .skills-header{
     text-align: center ;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .skills-list{
 
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-wrap: wrap;   
+    justify-content: center;
+    gap: 10px;     
+    text-align: center;
 }
 .skills-list span{
     font-size: 14px;
